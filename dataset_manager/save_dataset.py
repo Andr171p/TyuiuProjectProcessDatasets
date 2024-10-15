@@ -10,7 +10,7 @@ class SaveDataset:
     def save_to_csv(self, filename: str) -> None:
         self.dataframe.to_csv(
             path_or_buf=filename,
-            sep='\t',
+            sep=',',
             encoding='utf-8'
         )
         logger.info(f"Файл {filename} успешно сохранён...")
